@@ -34,7 +34,7 @@ function draw() {
   edges= createEdgeSprites();
   rabbit.collide(edges);
   
-  var select_sprites = Math.floor(Math.random() * 3) + 1;
+  var select_sprites = Math.round(random(1,3));
   
   if (frameCount % 50 == 0) {
       if (select_sprites == 1) {
